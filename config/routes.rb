@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
 
-
   devise_for :users
   get 'posts/show'
+
+  get '/' => 'home#top'
+  get 'categories' => 'categories#categories'
+  get 'communities' => 'communities#communities'
+
   # root  ''
 
   # The priority is based upon order of creation: first created -> highest priority.
