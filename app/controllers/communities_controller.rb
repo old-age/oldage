@@ -1,6 +1,6 @@
 class CommunitiesController < ApplicationController
 
-def communities
+def index
 
 end
 end

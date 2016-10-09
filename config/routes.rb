@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
   get '/' => 'home#top'
   get 'categories' => 'categories#categories'
-  get 'communities' => 'communities#communities'
+  get 'communities/index' => 'communities#index'
 
   # root  ''
 
