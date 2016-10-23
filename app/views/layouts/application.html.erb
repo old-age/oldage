@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+  <title>OldAge</title>
+
   <title>OldAgeApp</title>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 
   <% if user_signed_in? %> 
           Logged in as <%= current_user.email %>
@@ -15,6 +20,9 @@
           <%= link_to "サインイン", new_user_registration_path %> |
           <%= link_to "ログイン", new_user_session_path %>
         <% end %>
+
+
+
 
 <%= yield %>
 

@@ -6,7 +6,7 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
-  # config.secret_key = 'a20828dedf482ececa5b584430bfbfc36a97baa7e5a6676e9b58609a3cc6a9163626f0484f9896760973ca47b58fc5a5989baaece2c7bf7fe5a92ff1828254a2'
+  config.secret_key = 'a20828dedf482ececa5b584430bfbfc36a97baa7e5a6676e9b58609a3cc6a9163626f0484f9896760973ca47b58fc5a5989baaece2c7bf7fe5a92ff1828254a2'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -262,7 +262,7 @@ Devise.setup do |config|
   # When using Devise inside an engine, let's call it `MyEngine`, and this engine
   # is mountable, there are some extra configurations to be taken into account.
   # The following options are available, assuming the engine is mounted as:
-  #
+  
   #     mount MyEngine, at: '/my_engine'
   #
   # The router that invoked `devise_for`, in the example above, would be:
