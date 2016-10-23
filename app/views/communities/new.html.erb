@@ -1,0 +1,10 @@
+<h1>ようこそ！old age コミュニティへ！</h1>
+
+  <h2>新規コミュニティ</h2>
+  <%= form_tag communities_new_path do %>
+  コミュニティ名
+    <input type="text" name="name">
+  詳細
+    <textarea name="category"></textarea>
+    <input type="submit" value="投稿する">
+  <% end %>

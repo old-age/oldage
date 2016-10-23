@@ -5,7 +5,11 @@ Rails.application.routes.draw do
 
   get '/' => 'home#top'
   get 'categories' => 'categories#categories'
+  get 'communities/new' => 'communities#new'
   get 'communities/index' => 'communities#index'
+
+  post 'communities/new' => 'communities#create'
+
 
   # root  ''
 

@@ -28,17 +28,11 @@ ActiveRecord::Schema.define(version: 20161009111351) do
   end
 
   create_table "communities", force: :cascade do |t|
-    t.integer  "name"
+    t.string   "name"
     t.integer  "user_id"
-    t.integer  "category"
+    t.text     "category"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "community_ids", force: :cascade do |t|
-    t.integer  "community_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
   end
 
   create_table "names", force: :cascade do |t|
